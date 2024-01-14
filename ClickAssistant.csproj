@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+		<StartupObject>ClickAssistant.App</StartupObject>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <DefaultItemExcludes>$(DefaultItemExcludes);Overlay.NET\**;Process.NET\**</DefaultItemExcludes>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateProgramFile>false</GenerateProgramFile>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+      <PackageReference Include="NUnit" Version="4.0.1" />
+      <PackageReference Include="SharpDX.Direct2D1" Version="4.2.0" />
+      <PackageReference Include="SharpDX.DXGI" Version="4.2.0" />
+    </ItemGroup>
+
+</Project>
